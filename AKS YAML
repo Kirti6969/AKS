@@ -11,3 +11,11 @@ We can define yaml files with two different extensions
   2. abc.yaml
 
 
+The keys things of yaml are 
+
+1. YAML Comments
+2. YAML key value pairs
+3. YAML Dictionary or map
+4. YAML Array
+5. YAML Spaces
+6. YAML Document Seperator
