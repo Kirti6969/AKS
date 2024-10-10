@@ -1,0 +1,55 @@
+Basic definition of kubernetes yaml
+
+apiVersion:      #Version defenition (v1)
+kind:            #type of resource available in kubernetes (pod, replicaset, deployement,services,cronjobs etc)
+metadata:        # used to define the below
+  name:
+  labels:
+  namespace:
+spec:            #Specification or real definition for the k8's objects
+
+
+
+pod definition:
+
+apiVersion: v1 #string
+kind: pod #string
+metadata: #list
+  name: first pod
+  labels: #Dictionary
+    app: firstapp #key value pair
+spec:
+  containers:
+    -name: firstapp
+     image: python3.9
+     ports:
+      -conatainerport: 80
+
+
+After deploying this run the below command
+
+kubectl apply -f app.yaml
+
+
+Create a load balancer service yaml
+
+apiVersion: v1
+kind: service
+metadata: 
+  name: firstapp-loadbalancer
+spec:
+  type:LoadBalancer, cluster ip, nodeport (anyone thing)
+  selector: 
+    app: firstapp  # this should be the exactname labels that is defined in the pod section
+  port:80 #service port
+  targetport: 80 #container port
+
+After deploying this run the below command
+
+kubectl apply -f service.yaml
+
+
+#hola your first application is created.
+
+    
+
