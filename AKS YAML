@@ -1,0 +1,13 @@
+     YAML Basics
+
+YAML Is not a Markup language
+YAML is used to store information about different things
+We can use YAML to define key value pairs like variables , list and objects
+YAML is very similar to JSON
+YAML primilary focuses on readability and user friendliness
+
+We can define yaml files with two different extensions
+  1. abc.yml
+  2. abc.yaml
+
+
