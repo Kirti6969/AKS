@@ -1,0 +1,84 @@
+Please observe the indentations carefully
+
+
+#simple key value pair (Comments is declared like this)
+
+#For key valur pair need to have space after colon
+name: kirti
+exp: 3
+city: Hyd
+
+
+
+Dictionary/MAP
+
+Employee: #Dictionary
+  name: kirti
+  exp: 3
+  city: Hyd
+
+
+Arrays/List
+
+Employee: #define a Dictionary 
+  name: kirti
+  exp: 3
+  city: Hyd
+  skills: #define a list
+    -Cloud
+    -Devops
+    -Security
+
+Multiple lists
+
+Employee: #define a Dictionary 
+  name: kirti
+  exp: 3
+  city: Hyd
+  skills: #define a list
+    -Cloud
+    -Devops
+    -Security
+  Cloud: #Declaring multiple lists
+    -name:AWS
+     exp:1
+    -name:azure
+     exp-1
+    -name:gcp
+     exp:1
+
+
+How to use yaml document seperator
+
+Employee: #define a Dictionary 
+  name: kirti
+  exp: 3
+  city: Hyd
+  skills: #define a list
+    -Cloud
+    -Devops
+    -Security
+  Cloud: #Declaring multiple lists
+    -name:AWS
+     exp:1
+    -name:azure
+     exp-1
+    -name:gcp
+     exp:1
+--- # The three lines here defines the yaml seperator
+Employee: #define a Dictionary 
+  name: kirti
+  exp: 3
+  city: Hyd
+  skills: #define a list
+    -Cloud
+    -Devops
+    -Security
+  Cloud: #Declaring multiple lists
+    -name:AWS
+     exp:1
+    -name:azure
+     exp-1
+    -name:gcp
+     exp:1
+
