@@ -1,0 +1,17 @@
+Create a replica sets
+
+IMP: for every api version please check the kubernetes documentation
+
+In many cases it is recommended to use deployment definition
+
+apiVersion: apps/v1 
+kind: Replicastes
+metadata: 
+  name: secondapp
+spec:
+  replica: 3
+  selector:
+    matchlabels: 
+  template:
+
+
