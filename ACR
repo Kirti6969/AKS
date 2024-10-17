@@ -1,0 +1,15 @@
+ACR
+
+1. Managed ,private docker registry.
+2. Create and maintain azure container registries to store and manage our private docker container images.
+3. With acr we can simplfy container lifecycle management.
+4. Geo-replication to efficiently manage a single registry across multiple regions.
+5. Automate conatainer building and patching inclusin base image update and task scheduling.
+6. Integrated security with Azure ad authentication, RBAC and docker container trust and virtual netwok integrations.
+
+
+Pricing tiers:
+
+1. Basic
+2. Standard
+3. Premium 
